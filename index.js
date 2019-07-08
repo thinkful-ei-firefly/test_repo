@@ -116,13 +116,19 @@ console.log(max([-5, -5, -3]));
 console.log(min([-5, -5, -3]));
 
 function average(num) {
+  //   const avg = num.reduce((acc, curr) => {
+  //     return acc + curr;
+  //   }, 0);
+  //   console.log(avg);
+  //   return avg / num.length;
+
   let sum = 0;
   let avg = 0;
   for (let i = 0; i < num.length; i++) {
-    sum = num[i] + sum
+    sum = num[i] + sum;
   }
-  avg = sum/num.length
-  return avg
+  avg = sum / num.length;
+  return avg;
 }
-const num = [1, 2, 3, 4, 5]
-console.log(average(num));
+const arr = [1, 2, 3, 4, 5];
+console.log(average(arr));
