@@ -77,3 +77,40 @@ function daysInMonth(month, leapYear) {
   }
 }
 console.log(daysInMonth("May", true));
+
+const max = arr => {
+  let max;
+  if (arr.length === 0) {
+    max = null;
+    return max;
+  }
+  arr.forEach((num, index) => {
+    if (index === 0) {
+      max = num;
+    }
+    if (num > max) {
+      max = num;
+    }
+  });
+  return max;
+};
+
+const min = arr => {
+  let min;
+  if (arr.length === 0) {
+    min = null;
+    return min;
+  }
+  arr.forEach((num, index) => {
+    if (index === 0) {
+      min = num;
+    }
+    if (num < min) {
+      min = num;
+    }
+  });
+  return min;
+};
+
+console.log(max([-5, -5, -3]));
+console.log(min([-5, -5, -3]));
