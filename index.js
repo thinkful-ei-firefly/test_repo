@@ -85,19 +85,16 @@ const compChoice = () => {
 };
 const rockPaperScissors = num => {
   if (num === 1) {
-    const userChoice = "rock";
     const compSelect = compChoice();
     if (compSelect === "scissors") return "User wins";
     else if (compSelect === "paper") return "User loses";
     else return "it's a draw";
   } else if (num === 2) {
-    const userChoice = "paper";
     const compSelect = compChoice();
     if (compSelect === "scissors") return "User loses";
     else if (compSelect === "paper") return "it's a draw";
     else return "User Wins!";
   } else if (num === 3) {
-    const userChoice = "scissors";
     const compSelect = compChoice();
     if (compSelect === "scissors") return "It's a draw";
     else if (compSelect === "paper") return "User Wins";
