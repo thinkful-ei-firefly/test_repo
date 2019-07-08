@@ -1,6 +1,15 @@
 function jediName(firstName, lastName) {
-  lName = lastName.slice(0, 3);
-  fName = firstName.slice(0, 2);
+  //   const jediFirst = firstName
+  //     .split("")
+  //     .map((char, index) => (index < 3 ? char : ""))
+  //     .join("");
+  //   const jediLast = lastName
+  //     .split("")
+  //     .map((char, index) => (index < 2 ? char : ""))
+  //     .join("");
+  //   return `Your Jedi name is ${jediFirst} ${jediLast} and I am your father`;
+  const lName = lastName.slice(0, 3);
+  const fName = firstName.slice(0, 2);
   return lName + fName;
 }
 
