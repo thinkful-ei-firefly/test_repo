@@ -13,7 +13,7 @@ function jediName(firstName, lastName) {
   return lName + fName;
 }
 
-console.log(jediName("bob", "smith"));
+console.log(jediName("bobdsfsdf", "smith"));
 
 function beyond(num) {
   if (num === Infinity) {
