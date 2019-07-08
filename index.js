@@ -38,3 +38,33 @@ const decode = message => {
 };
 
 console.log(decode("craft block argon meter bells brown croon droop"));
+
+function daysInMonth(month, leapYear) {
+  switch(month) {
+    case 'January': 
+      return `${month} has 31 days`;
+    case 'Feburary': 
+      return leapYear ? `${month} has 29 days` : `${month}'has 28 days`;
+    case 'March':
+      return `${month} has 31 days`;
+    case 'April':
+      return `${month} has 30 days`;
+    case 'May':
+      return `${month} has 31 days`;
+    case 'June':
+      return `${month} has 30 days`;
+    case 'July':
+      return `${month} has 31 days`;
+    case 'August':
+      return `${month} has 31 days`;
+    case 'September':
+      return `${month} has 30 days`;
+    case 'October':
+      return `${month} has 31 days`;
+    case 'November':
+      return `${month} has 30 days`;
+    case 'December':
+      return `${month} has 31 days`;
+  }
+}
+console.log(daysInMonth('May', true))
